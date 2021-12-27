@@ -23,28 +23,10 @@ export default {
       },
     },
     {
-      name: 'publishedAt',
-      title: 'Tidpunkt för publicering',
-      type: 'datetime',
-    },
-    {
       name: 'body',
       title: 'Brödtext',
       type: 'blockContent',
     },
-    {
-      name: 'document',
-      title: 'Dokument',
-      type: 'file',
-      fields: [
-        {
-          name: 'titel',
-          type: 'string',
-          title: 'Titel'
-        }
-      ]
-
-    }
   ],
 
   preview: {

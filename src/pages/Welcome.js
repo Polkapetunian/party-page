@@ -25,14 +25,15 @@ const Welcome = () => {
         publishedAt,
         "documentURL": document.asset->url,
         "name": author -> name,
-        "authorImage": author -> image
+        "authorImage": author -> image,
+        "bio": author -> bio,
       }`
     )
       .then((data) => setWelcomeData(data[0]))
       .catch(console.error);
   }, []);
 
-  console.log(welcomeData)
+  console.log(welcomeData);
 
   if (!welcomeData) return <div>Loading...</div>;
 
@@ -50,6 +51,7 @@ const Welcome = () => {
             src={urlFor(welcomeData.authorImage).width(100).url()}
             alt={welcomeData.name}
           />
+          <div className="image-overlay">{welcomeData.bio}</div>
           <h3>{welcomeData.name}</h3>
         </div>
         <BlockContent
