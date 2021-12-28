@@ -9,7 +9,6 @@ import blockContent from './blockContent'
 import home from './home'
 import info from './info'
 import author from './author'
-import document from './document'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -20,7 +19,6 @@ export default createSchema({
   types: schemaTypes.concat([
     author,
     blockContent,
-    document,
     home,
     info
     /* Your types here! */

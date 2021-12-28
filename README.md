@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+# PARTY PAGE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a party invitation webpage. It was created as a test and portfolio version of a page I will make for my husband's upcoming birthday party. It was also a way to practise using Sanity. Sanity allows for a user to add content such as images and text, without having to actually build a webpage themselves.
 
-## Available Scripts
+## Technologies
 
-In the project directory, you can run:
+This project was created with React (starting with Create React App). The navigation is powered by React Router DOM, the map by Pigeon Maps and the content is edited in, stored in and fetched from Sanity, which is a headless CMS. A custom hook was created to validate form input (courtesy of CodeBucks https://dev.to/codebucks/form-validation-in-reactjs-by-building-reusable-custom-hook-1bg7). 
 
-### `npm start`
+## About the sign-up form
+The sign-up form contains some validation, however the response is not sent anywhere... The real web page might need to have the sign-up form protected by password or at least the whole web page should not be known outside of the group of people actually being invited. The sign-up in the "real" version could be an embedded Google form, or it could be the custom form connected to a database, or even Sanity. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Assets
+The adorable cat pictures are from PublicDomainPictures.net. 

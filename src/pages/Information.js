@@ -77,8 +77,8 @@ const Information = () => {
       <h2>
         {infoData.title}
       </h2>
-      <p>Tid: {weekDay} {date} / {month} - {year}, kl. {hours}:{minutes}</p>
-      <p>Plats: {infoData.location} </p>
+      <p className="info-text">Tid: {weekDay} {date} / {month} - {year}, kl. {hours}:{minutes}</p>
+      <p className="info-text">Plats: {infoData.location} </p>
       <BlockContent
         blocks={infoData.body}
         projectId={sanityClient.config().projectId}

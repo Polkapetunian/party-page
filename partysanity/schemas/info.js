@@ -9,20 +9,6 @@ export default {
       type: 'string',
     },
     {
-      name: 'author',
-      title: 'Författare',
-      type: 'reference',
-      to: { type: 'author' },
-    },
-    {
-      name: 'mainImage',
-      title: 'Huvudbild',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
-    },
-    {
       name: 'partyTime',
       title: 'Tidpunkt för fest',
       type: 'datetime',

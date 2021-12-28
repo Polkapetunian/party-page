@@ -13,6 +13,8 @@ code {
     monospace;
 }
 
+/* GENERAL*/
+
 .App {
   padding: 20px;
   font-family: 'Lusitana', serif;
@@ -43,6 +45,8 @@ code {
   text-decoration: none;
   font-weight: 700;
 }
+
+/* HOME*/
 
 .author-container {
   float: right;
@@ -91,6 +95,14 @@ code {
   border-radius: 50%;
   transform: translateY(-30px)
 }
+
+/* INFO*/
+
+.info-text {
+  font-weight: 700;
+}
+
+/* SIGN-UP*/
 
 .signup-form {
   display: flex;
