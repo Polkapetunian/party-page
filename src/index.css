@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  width: 100vw;
   background: #f3f0e9;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -13,13 +18,19 @@ code {
     monospace;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~MOBILE~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* GENERAL*/
 
-.App {
-  padding: 20px;
+.app {
+  width: 100%;
+  padding: 10px 30px 30px;
   font-family: 'Lusitana', serif;
   color: #411910;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar {
@@ -40,13 +51,24 @@ code {
 .activated {
   padding: 5px 10px 7px;
   margin-right: 20px;
-  background-color: #7e2178;
+  background-color: #545f4f;
   color: #f3f0e9; 
   text-decoration: none;
   font-weight: 700;
 }
 
 /* HOME*/
+
+.welcome-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.welcome-heading {
+  position: absolute;
+  padding-left: 20px;
+  color: #f3f0e9;;  
+}
 
 .author-container {
   float: right;
@@ -60,6 +82,10 @@ code {
 .author-image {
   border-radius: 50%;
   position: relative;
+}
+
+.author-name {
+  font-size: 16px;
 }
 
 .image-overlay {
@@ -130,4 +156,63 @@ code {
   border: 1 px solid black;
   border-style: none;
   padding: 5px 0 7px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~TABLET~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (min-width : 600px) {
+
+  .app {
+    padding: 50px;
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+  }
+
+  .welcome-container {
+    width: 75%;
+    margin-top: 40px;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .author-container {
+    display: flex;
+    float: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .author-name {
+    font-size: 18px;
+  }
+
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .welcome-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .info-container {
+    width: 90%;
+  }
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~DESKTOP~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media (min-width : 1200px ) {
+ 
 }

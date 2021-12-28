@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import sanityClient from '../client.js';
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
-import { Map, Marker } from "pigeon-maps";
+import { Map, Marker, ZoomControl } from "pigeon-maps";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -72,8 +72,19 @@ const Information = () => {
   console.log(lat)
   console.log(long)
 
+  //Responsive map size
+  let mapHeight;
+  let bigScreen = false;
+
+  if (window.innerWidth <= 768) {
+    mapHeight = '300px';
+  } else {
+    mapHeight = '500px';
+    bigScreen = true;
+  }
+
   return (
-    <div>
+    <div className="info-container">
       <h2>
         {infoData.title}
       </h2>
@@ -84,8 +95,9 @@ const Information = () => {
         projectId={sanityClient.config().projectId}
         dataset={sanityClient.config().dataset}
       />
-      <Map height={300} defaultCenter={[59.861315, 17.645395]} defaultZoom={11}>
+      <Map height={mapHeight} defaultCenter={[59.861315, 17.645395]} defaultZoom={11}>
         <Marker width={50} anchor={[lat, long]} />
+        {bigScreen && <ZoomControl />}
       </Map>
     </div>
   )

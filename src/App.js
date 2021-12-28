@@ -10,7 +10,7 @@ import SignUp from './pages/SignUp';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="app">
         <h1>Party page</h1>
         <NavBar />
         <Routes>
