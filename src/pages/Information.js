@@ -85,16 +85,18 @@ const Information = () => {
 
   return (
     <div className="info-container">
-      <h2>
-        {infoData.title}
-      </h2>
-      <p className="info-text">Tid: {weekDay} {date} / {month} - {year}, kl. {hours}:{minutes}</p>
-      <p className="info-text">Plats: {infoData.location} </p>
-      <BlockContent
-        blocks={infoData.body}
-        projectId={sanityClient.config().projectId}
-        dataset={sanityClient.config().dataset}
-      />
+      <div className="info-text-container">
+        <h2>
+          {infoData.title}
+        </h2>
+        <p className="info-text">Tid: {weekDay} {date} / {month} - {year}, kl. {hours}:{minutes}</p>
+        <p className="info-text">Plats: {infoData.location} </p>
+        <BlockContent
+          blocks={infoData.body}
+          projectId={sanityClient.config().projectId}
+          dataset={sanityClient.config().dataset}
+        />
+      </div>
       <Map height={mapHeight} defaultCenter={[59.861315, 17.645395]} defaultZoom={11}>
         <Marker width={50} anchor={[lat, long]} />
         {bigScreen && <ZoomControl />}
